@@ -40,7 +40,7 @@
                </div>
                <div class="field btn">
                   <div class="btn-layer"></div>
-                  <input type="submit" class="btn btn-primary" value="Login">
+                  <input type="submit" onclick="displayMessage()"  class="btn btn-primary" value="Login">
                </div>
                <div class="signup-link">
                   Not a member? <a href="">Signup now</a>
@@ -56,12 +56,9 @@
                <div class="field">
                   <input type="password" name="password" placeholder="Password" required>
                </div>
-               <div class="field">
-                  <input type="password" placeholder="Confirm password" required>
-               </div>
                <div class="field btn">
                   <div class="btn-layer"></div>
-                  <input type="submit" value="Signup">
+                  <input type="submit" onclick="displayMessage()" value="Signup">
                </div>
             </form>
          </div>
@@ -85,7 +82,17 @@
          signupBtn.click();
          return false;
       });
-   </script>
+
+
+  </script>
+<!-- 
+<script>
+function displayMessage()
+{
+alert("Hi, have a good day");
+}
+
+</script> -->
 </body>
 
 </html>
